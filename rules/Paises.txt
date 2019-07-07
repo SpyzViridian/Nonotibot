@@ -1,0 +1,135 @@
+### PAISES ###
+
+$PAIS -> {"[
+Afganistán|
+Albania|
+Alemania|
+Andorra|
+Angola|
+La Antártida|
+Arabia Saudí|
+Argelia|
+Argentina|
+Armenia|
+Australia|
+Austria|
+Azerbaiyán|
+Bahamas|
+Bangladesh|
+Bielorrusia|
+Bélgica|
+Belice|
+Bolivia|
+Bosnia y Herzegovina|
+Botsuana|
+Brasil|
+Bulgaria|
+Burkina Faso|
+Cabo Verde|
+Camboya|
+Canadá|
+República Checa|
+Chile|
+China|
+Chipre|
+El Vaticano|
+Colombia|
+Corea del Norte|
+Corea del Sur|
+Costa de Marfil|
+Costa Rica|
+Croacia|
+Cuba|
+Dinamarca|
+República Dominicana|
+Ecuador|
+Egipto|
+El Salvador|
+Eslovaquia|
+Eslovenia|
+España|
+Estados Unidos|
+Estonia|
+Etiopía|
+Filipinas|
+Finlandia|
+Francia|
+Georgia|
+Gibraltar|
+Granada|
+Grecia|
+Groenlandia|
+Guadalupe|
+Guatemala|
+Haití|
+Honduras|
+Hong Kong|
+Hungría|
+India|
+Indonesia|
+Irán|
+Iraq|
+Irlanda|
+Islandia|
+Israel|
+Italia|
+Jamaica|
+Japón|
+Kenia|
+Laos|
+Letonia|
+Libia|
+Lituania|
+Luxemburgo|
+Madagascar|
+Malasia|
+Malta|
+Marruecos|
+Mauritania|
+México|
+Moldavia|
+Mónaco|
+Mongolia|
+Montserrat|
+Mozambique|
+Nepal|
+Nicaragua|
+Nigeria|
+Noruega|
+Nueva Zelanda|
+Países Bajos|
+Pakistán|
+Palestina|
+Panamá|
+Paraguay|
+Perú|
+Polonia|
+Portugal|
+Puerto Rico|
+Reino Unido|
+Rumania|
+Rusia|
+San Marino|
+Senegal|
+Sierra Leona|
+Singapur|
+Siria|
+Somalia|
+Sri Lanka|
+Sudáfrica|
+Suecia|
+Suiza|
+Tailandia|
+Taiwán|
+Tanzania|
+Túnez|
+Turkmenistán|
+Turquía|
+Ucrania|
+Uganda|
+Uruguay|
+Venezuela|
+Vietnam|
+Yemen|
+Zimbabue
+]"}

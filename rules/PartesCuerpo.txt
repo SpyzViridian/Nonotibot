@@ -1,0 +1,24 @@
+$SINTAGMA_PARTE_CUERPO -> {"$SINTAGMA_PARTE_CUERPO_ART", @g=?, @n=?}
+
+$SINTAGMA_PARTE_CUERPO_ART -> {"$SINTAGMA_PARTE_CUERPO_UNICA", @n=S}
+$SINTAGMA_PARTE_CUERPO_ART -> {"$SINTAGMA_PARTE_CUERPO_CUALQUIERA"}
+
+$SINTAGMA_PARTE_CUERPO_UNICA -> {"<el|la> $PARTE_CUERPO_UNICA"}
+$SINTAGMA_PARTE_CUERPO_CUALQUIERA -> {"<(un|los)|(una|las)> $PARTE_CUERPO_CUALQUIER"}
+
+$PARTE_CUERPO -> {"$PARTE_CUERPO_UNICA", @n=S}
+$PARTE_CUERPO -> {"$PARTE_CUERPO_CUALQUIER"}
+
+$PARTE_CUERPO_UNICA -> {"$PARTE_CUERPO_UNICA_MASC", @g=M}
+$PARTE_CUERPO_UNICA -> {"$PARTE_CUERPO_UNICA_FEM", @g=F}
+
+$PARTE_CUERPO_UNICA_MASC -> {"[corazón|pecho|hígado|bazo|colon|apéndice|páncreas|cerebro|trasero|pelo]"}
+$PARTE_CUERPO_UNICA_FEM -> {"[cara|cabeza|garganta|espalda|cadera|pelvis|columna|nariz|barbilla|frente]"}
+
+$PARTE_CUERPO_CUALQUIER -> {"$PARTE_CUERPO_CUALQUIER_MASC", @g=M}
+$PARTE_CUERPO_CUALQUIER -> {"$PARTE_CUERPO_CUALQUIER_FEM", @g=F}
+
+$PARTE_CUERPO_CUALQUIER_MASC -> {"[dedo(s) $DEDO_DE_DONDE|brazo(s)|pie(s)|pulm(ón|ones)|riñ(ón|ones)|ojo(s)|párpado(s)]"}
+$PARTE_CUERPO_CUALQUIER_FEM -> {"[mano(s)|oreja(s)|ceja(s)|pierna(s)|vértebra(s)|axila(s)]"}
+
+$DEDO_DE_DONDE -> {"[del pie|de la mano|$LAMBDA|$LAMBDA]"}

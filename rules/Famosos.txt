@@ -1,0 +1,168 @@
+$SUJETO -> {"$FAMOSO", @n=S}
+$PERSONA -> {"$FAMOSO", @n=S}
+$FAMOSO -> {"$FAM_HOMBRE", @g=M}
+$FAMOSO -> {"$FAM_MUJER", @g=F}
+
+$FAM_HOMBRE -> {"[
+Dani Rovira|
+Bruno Mars|
+Pablo Motos|
+Will Smith|
+Johnny Depp|
+Adam Sandler|
+Vin Diesel|
+Jackie Chan|
+Morgan Freeman|
+Brad Pitt|
+Robin Williams|
+Leonardo DiCaprio|
+Jim Carrey|
+Nicholas Cage|
+Jim Carrey|
+Bruce Willis|
+Tom Cruise|
+Eddie Murphy|
+Silvestre Stallone|
+Ben Stiller|
+Robert de Niro|
+Arnold Schwarzenegger|
+Tom Hanks|
+Owen Wilson|
+Matt Damon|
+George Clooney|
+Keanu Reeves|
+Orlando Bloom|
+Mel Gibson|
+Anthony Hopkins|
+Brendan Fraser|
+Richard Gere|
+Jack Nicholson|
+Harrison Ford|
+Samuel L. Jackson|
+Clint Eastwood|
+Kevin Costner|
+Steve Carell|
+Elijah Wood|
+Ewan McGregor|
+Justin Bieber|
+David Bisbal|
+Pablo Alborán|
+David Bustamante|
+Manuel Carrasco|
+Florentino Pérez|
+Cristiano Ronaldo|
+Arturo Pérez Reverte|
+Leo Messi|
+Luis de Guindos|
+Mariano Rajoy |
+Pablo Iglesias|
+Pedro Sánchez|
+Albert Rivera|
+Pedro Sánchez|
+el Rey Felipe VI|
+Pablo Casado|
+Alberto Chicote|
+Pablo Abascal|
+Ibai Llanos|
+Donald Trump|
+Carles Puigdemont|
+Rafa Nadal|
+Pitbull|
+Obama|
+Abraham Mateo|
+Alejandro Sanz|
+Alfredo Duro|
+Antonio Banderas|
+Antonio Orozco|
+Antonio Resines|
+Pepe Viyuela|
+Bertín Osborne|
+Berto Romero|
+Buenafuente|
+Karlos Arguiñano|
+Carlos Latre|
+Cepeda|
+Eduardo Noriega|
+El Gran Wyoming|
+Francisco Marhuenda|
+Íñigo Errejón|
+Jordi Évole|
+José Luis Rodríguez Zapatero|
+José Mota|
+Juan y Medio|
+Mario Casas|
+Mario Vaquerizo|
+Matias Prats|
+Melendi|
+Miguel Bosé|
+Nacho Vidal|
+Pablo Alborán|
+Pedro Almodóvar|
+Arturo Valls|
+el youtuber 'Dalas Review'|
+el youtuber 'El Rubius'|
+el youtuber 'Wismichu'|
+el youtuber 'Auronplay'|
+el youtuber 'Pewdiepie'|
+el youtuber 'Alexelcapo'|
+el youtuber 'WillyRex'|
+el youtuber 'Vegeta777'
+]"}
+
+$FAM_MUJER -> {"[
+Paz Padilla|
+Eva Hache|
+Katy Perry|
+Mónica Naranjo|
+Angelina Jolie|
+Mónica Naranjo|
+Jennifer Aniston|
+Sandra Bullock|
+Cameron Diaz|
+Scarlet Johansson|
+Julia Roberts|
+Meryl Streep|
+Natalie Portman|
+Salma Hayek|
+Jessica Alba|
+Penélope Cruz|
+Chenoa|
+Catherine Zeta Jones|
+Nicole Kidman|
+Milla Jovovich|
+Halle Berry|
+Ariana Grande|
+Shakira|
+Miley Cyrus|
+Ariana Grande|
+Edurne|
+Laura Pausini|
+Conchita Wurst|
+Susana Díaz|
+Esperanza Aguirre|
+la Reina Letizia|
+Irene Montero|
+Theresa May|
+Hillary Clinton|
+Angela Merkel|
+Malú|
+Adele|
+Carla Bruni|
+Emma Watson|
+Jennifer Lopez|
+Nicky Minaj|
+Madonna|
+Rosalía|
+Sofía Vergara|
+Taylor Swift|
+Alaska|
+Amaia Montero|
+Belén Rueda|
+Carmen Machi|
+Dulceida|
+Elsa Pataky|
+Mónica Carrillo|
+Susana Griso|
+
+Inés Arrimadas
+]"}

@@ -1,0 +1,46 @@
+### OFICIOS ###
+
+$OFICIO -> {"[
+profeso<r(e)|ra>(s)|
+atleta(s)|
+submarinista(s)|
+veterinari<o|a>(s)|
+biólog<o|a>(s)|
+act<or|ri(z|c)>(es)|
+boxeado<r(e)|ra>(s)|
+becari<o|a>(s)|
+informátic<o|a>(s)|
+programado<r(e)|ra>(s)|
+trabajado<r(e)|ra>(s)|
+cantante(s) de $GENERO_MUSICAL|
+futbolista(s)|
+fontaner<o|a>(s)|
+secretari<o|a>(s)|
+ministr<o|a>(s)|
+concejal(es)|
+jue(z|ces)|
+notari<o|a>(s)|
+abogad<o|a>(s)|
+payas<o|a>(s)|
+barrender<o|a>(s)|
+contrabandista(s)|
+policía(s)|
+militar(es)|
+enfermer<o|a>(s)|
+mileurista(s)|
+millonari<o|a>(s)|
+multimillonari<o|a>(s)|
+electricista(s)|
+fontaner<o|a>(s)|
+misioner<o|a>(s)|
+gamer(s)|
+youtuber(s)|
+influencer(s)|
+funcionari<o|a>(s)|
+community manager(s)|
+oficinista(s)|
+granjer<o|a>(s)|
+inmigrante(s)
+]"}
+
+$GENERO_MUSICAL -> {"[Pop|Rock|Heavy Metal|Death Metal|Country|Jazz|Soul|Reggaeton|Rap|Hip-Hop]"}

@@ -1,0 +1,53 @@
+$SUJETO -> {"$ANIMAL_NOM"}
+
+$ANIMAL_NOM -> {"$ARTICULO_INDET $ANIMAL"}
+
+$ANIMAL -> {"$ANIMAL_GEN"}
+$ANIMAL -> {"$ANIMAL_MASC", @g=M}
+$ANIMAL -> {"$ANIMAL_FEM", @g=F}
+
+$ANIMAL_GEN -> {"[
+perr<o|a>(s)|
+gat<o|a>(s)|
+cerd<o|a>(s)|
+<toro|vaca>(s)|
+<rat(ón|ones)|rata(s)>|
+<caballo|yegua>(s)|
+<pollo|gallina>(s)|
+rinoceronte(s)|
+elefante(s)|
+caim(án|anes)|
+<le(ón|ones)|leonesa(s)>|
+tigr<e|esa>(s)|
+mon<o|a>(s)|
+os<o|a>(s)|
+jabalí(es)|
+chimpancé(s)|
+gorila(s)
+]"}
+
+$ANIMAL_MASC -> {"[
+cocodrilo(s)|
+puma(s)|
+cangrejo(s)|
+pájaro(s)|
+ciervo(s)|
+carnero(s)|
+conejo(s)|
+lagarto(s)|
+avestru(z|ces)|
+cerdo(s)|
+zorro(s)|
+pavo(s)|
+mapache(s)
+]"}
+
+$ANIMAL_FEM -> {"[
+morsa(s)|
+foca(s)|
+paloma(s)|
+serpiente(s)|
+cabra(s)|
+salamandra(s)|
+pantera(s)
+]"}
