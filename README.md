@@ -31,4 +31,5 @@ Para poder generar frases, se necesitan crear reglas en ficheros de texto plano 
 ##Ejemplos
 
 $IRRUPTOR_OPERACION -> {"$SUJETO [entra(n)|irrumpe(n)] $COMO_IRRUMPE en el quirófano"}
+
 $COMO_IRRUMPE -> {"[alocadamente|impresiviblemente|forzosamente|$LAMBDA]"}
