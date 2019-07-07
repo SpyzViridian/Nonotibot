@@ -28,7 +28,7 @@ Para poder generar frases, se necesitan crear reglas en ficheros de texto plano 
  4) Elección por número. Para decidir entre (singular|plural) o sólo (plural)
  5) Listas. Se escogerá un valor aleatorio de entre todos los posibles [a|b|c|...]
  
-##Ejemplos
+## Ejemplos
 
 $IRRUPTOR_OPERACION -> {"$SUJETO [entra(n)|irrumpe(n)] $COMO_IRRUMPE en el quirófano"}
 
