@@ -1,10 +1,10 @@
-## Nonotibot
+# Nonotibot
 El código detrás de @Nonotibot (Twitter)
 
-# Descripción
+#3 Descripción
 Programa en Java que genera frases a partir de reglas. El programa incluirá en el futuro una integración con la API Twitter4j para poder tuitear las frases generadas.
 
-# Cómo funciona
+## Cómo funciona
 
 Para poder generar frases, se necesitan crear reglas en ficheros de texto plano (x). Las reglas tienen el siguiente formato:
  
@@ -28,7 +28,7 @@ Para poder generar frases, se necesitan crear reglas en ficheros de texto plano 
  4) Elección por número. Para decidir entre (singular|plural) o sólo (plural)
  5) Listas. Se escogerá un valor aleatorio de entre todos los posibles [a|b|c|...]
  
-Ejemplos:
+##Ejemplos
 
 $IRRUPTOR_OPERACION -> {"$SUJETO [entra(n)|irrumpe(n)] $COMO_IRRUMPE en el quirófano"}
 $COMO_IRRUMPE -> {"[alocadamente|impresiviblemente|forzosamente|$LAMBDA]"}
