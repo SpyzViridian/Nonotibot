@@ -1,16 +1,22 @@
 $VERBO -> {"[$VERBO_CON_CON|$VERBO_CON_A]"}
 
-$VERBO_REFLEXIVO -> {"[peinarse|ducharse|suicidarse|dormirse]"}
+$VERBO_REFLEXIVO -> {"[peinarse|ducharse|dormirse|meterse $OBJETO_SINGULAR_O_INCONTABLE por $ORIFICIO]"}
 $VERBO_CON_A -> {"[
-acariciar|besar|esnifar|tirar|destrozar|matar|apuñalar|
-disparar|insultar|aplastar|manosear|tocar|insinuarse|toquetear|robar|
-intimidar|despreciar|interrumpir|molestar|empujar|pegar|acosar
+acariciar|besar|matar|apuñalar|asfixiar|
+disparar|insultar|aplastar|manosear|tocar|insinuarse|toquetear|robar|odiar|
+intimidar|despreciar|interrumpir|molestar|empujar|pegar|acosar|provocar|desafiar|declararse|atizar $PEGAR_CON_QUE|pegar $PEGAR_CON_QUE|tirar $TIRAR_EL_QUE
 ]"}
 
-$VERBO_CON_CON -> {"$VERBO_REFLEXIVO"}
 $VERBO_CON_CON -> {"[
-comer|dormir|jugar|estudiar|conducir|beber|fumar|traficar|pagar $PAGAR_COMO|negociar|mantener relaciones sexuales|intimar
+$VERBO_REFLEXIVO|comer|dormir|jugar|estudiar|conducir|beber|fumar|traficar|negociar|mantener relaciones sexuales|intimar|hablar|conversar|casarse|divorciarse
+|comer $ALIMENTO_PLURAL|beber $LIQUIDO_INCONTABLE
 ]"}
 
-$PAGAR_COMO -> {"[en negro|$LAMBDA]"}
+$PEGAR_CON_QUE -> {"con $OBJETO_INDET_SINGULAR"}
+$TIRAR_EL_QUE -> {"$OBJETO_PLURAL_SIN_ARTICULO"}
+
+$OBJETO_INDET_SINGULAR -> {"$ARTICULO_INDET $OBJETO", @n=S, @s=T}
+$OBJETO_SINGULAR_O_INCONTABLE -> {"$OBJETO_INDET_SINGULAR"}
+$OBJETO_SINGULAR_O_INCONTABLE -> {"$INCONTABLE"}
+$ALIMENTO_PLURAL -> {"$ALIMENTO", @n=P, @s=T}
 

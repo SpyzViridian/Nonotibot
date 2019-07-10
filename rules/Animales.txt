@@ -1,6 +1,11 @@
 $SUJETO -> {"$ANIMAL_NOM"}
 
 $ANIMAL_NOM -> {"$ARTICULO_INDET $ANIMAL"}
+$ANIMAL_NOM -> {"$ARTICULO_DET $ANIMAL"}
+$ANIMAL_NOM_DET -> {"$ARTICULO_DET $ANIMAL_FEM", @g=F, @n=S, @s=T}
+$ANIMAL_NOM_DET -> {"$ARTICULO_DET [$ANIMAL_GEN|$ANIMAL_MASC]", @g=M, @n=S, @s=T}
+$ANIMAL_NOM_INDET -> {"$ARTICULO_INDET $ANIMAL_FEM", @g=F, @n=S, @s=T}
+$ANIMAL_NOM_INDET -> {"$ARTICULO_INDET [$ANIMAL_GEN|$ANIMAL_MASC]", @g=M, @n=S, @s=T}
 
 $ANIMAL -> {"$ANIMAL_GEN"}
 $ANIMAL -> {"$ANIMAL_MASC", @g=M}
@@ -49,5 +54,10 @@ paloma(s)|
 serpiente(s)|
 cabra(s)|
 salamandra(s)|
+abeja(s)|
+avispa(s)|
+oruga(s)|
+cucaracha(s)|
+mariposa(s)|
 pantera(s)
 ]"}

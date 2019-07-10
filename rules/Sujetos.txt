@@ -8,6 +8,7 @@ $ALGUIEN -> {"$ARTICULO_INDET $CALIFICADO"}
 $ALGUIEN -> {"$ARTICULO_INDET $CALIFICADO"}
 $ALGUIEN -> {"$ARTICULO_INDET $CALIFICADO"}
 $ALGUIEN -> {"$NUMERO_2_10 $CALIFICADO", @n=P}
+$ALGUIEN_SIN_ARTICULO -> {"$CALIFICADO"}
 
 $CALIFICADO -> {"[$OFICIO_EDAD|$CALIF_EDAD]"}
 # Priorizar no poner la edad
@@ -23,7 +24,6 @@ $NIÑO -> {"niñ<o|a>(s) de $EDAD_NIÑO años"}
 $JOVEN -> {"j(oven|óvenes) de $EDAD_JOVEN años"}
 $ADULTO -> {"<hombre|mujer(e)>(s) de $EDAD_ADULTO años"}
 $ANCIANO -> {"ancian<o|a>(s) de $EDAD_ANCIANO años"}
-
 $EDAD_NIÑO -> {"[dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce]"}
 $EDAD_JOVEN -> {"[trece|catorce|quince|16|17|18|19]"}
 $EDAD_ADULTO -> {"[20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70]"}

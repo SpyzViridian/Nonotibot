@@ -15,6 +15,10 @@ $PARTE_CUERPO_UNICA -> {"$PARTE_CUERPO_UNICA_FEM", @g=F}
 $PARTE_CUERPO_UNICA_MASC -> {"[corazón|pecho|hígado|bazo|colon|apéndice|páncreas|cerebro|trasero|estómago|pelo|ano|intestino grueso|intestino delgado]"}
 $PARTE_CUERPO_UNICA_FEM -> {"[cara|cabeza|garganta|espalda|cadera|pelvis|columna|nariz|barbilla|frente]"}
 
+$ORIFICIO -> {"[ano|orificio nasal|oído|ombligo]", @g=M}
+$ORIFICIO -> {"[boca|uretra]", @g=F}
+$SINTAGMA_ORIFICIO -> {"<el|la> $ORIFICIO", @g=?, @s=T}
+
 $PARTE_CUERPO_CUALQUIER -> {"$PARTE_CUERPO_CUALQUIER_MASC", @g=M}
 $PARTE_CUERPO_CUALQUIER -> {"$PARTE_CUERPO_CUALQUIER_FEM", @g=F}
 

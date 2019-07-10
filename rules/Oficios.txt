@@ -34,6 +34,10 @@ electricista(s)|
 fontaner<o|a>(s)|
 misioner<o|a>(s)|
 gamer(s)|
+vegan<o|a>(s)|
+animalista(s)|
+ecologista(s)|
+activista(s)|
 youtuber(s)|
 influencer(s)|
 funcionari<o|a>(s)|
@@ -42,5 +46,7 @@ oficinista(s)|
 granjer<o|a>(s)|
 inmigrante(s)
 ]"}
+
+$OFICIO_SUST -> {"$OFICIO", @n=S, @g=M, @s=T}
 
 $GENERO_MUSICAL -> {"[Pop|Rock|Heavy Metal|Death Metal|Country|Jazz|Soul|Reggaeton|Rap|Hip-Hop]"}

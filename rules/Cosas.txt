@@ -1,16 +1,17 @@
 ############### COSAS ###############
 
 $COSA -> {"[$OBJETO_CONTABLE|$LIQUIDO_INCONTABLE]"}
+$INCONTABLE -> {"[$OBJETO_INCONTABLE|$LIQUIDO_INCONTABLE|$DROGA]"}
 
 $CON_COSA -> {"$OBJETO_CONTABLE_PLURAL", @n=P, @s=T}
-$CON_COSA -> {"$LIQUIDO_INCONTABLE", @n=S, @s=T}
+$CON_COSA -> {"$INCONTABLE", @n=S, @s=T}
 $OBJETO_CONTABLE_PLURAL -> {"$OBJETO", @n=P}
 
 $OBJETO -> {"$OBJETO_CONTABLE"}
 $OBJETO_INDET -> {"$ARTICULO_INDET $OBJETO"}
 
 $OBJETO_CONTABLE -> {"[$HERRAMIENTA|$MUEBLE|$INSTRUMENTO|$VEHICULO|$FRUTA|$VERDURA|$OBJETO_OTRO]"}
-$ALIMENTO -> {"[$FRUTA|$VERDURA]"}
+$ALIMENTO -> {"[$FRUTA|$VERDURA|$FRUTOS_VARIADOS]"}
 
 $HERRAMIENTA -> {"alicates", @g=M, @n=P}
 $HERRAMIENTA -> {"tenazas", @g=F, @n=P}
@@ -47,7 +48,6 @@ $INSTRUMENTO -> {"saxof(ón|ones)", @g=M}
 $INSTRUMENTO -> {"trompeta(s)", @g=F}
 $INSTRUMENTO -> {"viol(ín|ines)", @g=M}
 $INSTRUMENTO -> {"violonchelo(s)", @g=M}
-$INSTRUMENTO -> {"viola(s)", @g=F}
 $INSTRUMENTO -> {"armónica(s)", @g=F}
 $INSTRUMENTO -> {"xilófono(s)", @g=M}
 $INSTRUMENTO -> {"tambor(es)", @g=M}
@@ -65,6 +65,8 @@ $VEHICULO -> {"autob(ús|uses)", @g=M}
 $VEHICULO -> {"cami(ón|ones)", @g=M}
 $VEHICULO -> {"furgoneta(s)", @g=F}
 $VEHICULO -> {"bicicleta(s)", @g=F}
+$VEHICULO -> {"portaaviones", @g=M}
+$VEHICULO -> {"tanque(s)", @g=M}
 
 $OBJETO_OTRO -> {"pelota(s) $PELOTA_DE_QUE", @g=F}
 $OBJETO_OTRO -> {"palo(s)", @g=M}
@@ -84,16 +86,39 @@ $OBJETO_OTRO -> {"vaso(s)", @g=M}
 $OBJETO_OTRO -> {"plato(s)", @g=M}
 $OBJETO_OTRO -> {"lámpara(s)", @g=F}
 $OBJETO_OTRO -> {"tap(ón|ones)", @g=M}
+$OBJETO_OTRO -> {"bolso(s)", @g=M}
+$OBJETO_OTRO -> {"billete(s)", @g=M}
+$OBJETO_OTRO -> {"muelle(s)", @g=M}
+$OBJETO_OTRO -> {"moneda(s)", @g=F}
+$OBJETO_OTRO -> {"canica(s)", @g=F}
+$OBJETO_OTRO -> {"mochila(s)", @g=F}
+$OBJETO_OTRO -> {"maleta(s)", @g=F}
+$OBJETO_OTRO -> {"rueda(s)", @g=F}
+$OBJETO_OTRO -> {"espada(s)", @g=F}
+$OBJETO_OTRO -> {"alfiler(es)", @g=M}
+$OBJETO_OTRO -> {"chapa(s)", @g=F}
+$OBJETO_OTRO -> {"revista(s)", @g=F}
+$OBJETO_OTRO -> {"libro(s)", @g=M}
+$OBJETO_OTRO -> {"diccionario(s)", @g=M}
+$OBJETO_OTRO -> {"cuadro(s)", @g=M}
+$OBJETO_OTRO -> {"picaporte(s)", @g=M}
+$OBJETO_OTRO -> {"mando(s)", @g=M}
+$OBJETO_OTRO -> {"teléfono(s) móvil(es)", @g=M}
+$OBJETO_OTRO -> {"bombona(s) de butano", @g=F}
 $OBJETO_OTRO -> {"botella de $LIQUIDO_INCONTABLE", @g=F}
-$OBJETO_OTRO -> {"bote de $LIQUIDO_INCONTABLE", @g=M}
+$OBJETO_OTRO -> {"bote de $INCONTABLE", @g=M}
+$OBJETO_OTRO -> {"tarro de $INCONTABLE", @g=M}
 $OBJETO_OTRO -> {"$OBJETO_EROTICO", @g=M}
+
+$OBJETO_INCONTABLE -> {"[pan|sal|azúcar|pimienta|perejil|orégano|tomillo|romero|pimentón|ajo en polvo|albahaca|canela]"}
+$DROGA -> {"[marihuana|cocaína|éxtasis|crack|heroína|LSD]"}
 
 $OBJETO_EROTICO -> {"consolador(es)", @g=M}
 $OBJETO_EROTICO -> {"vibrador(es)", @g=M}
 $OBJETO_EROTICO -> {"cond(ón|ones)", @g=M}
 $OBJETO_EROTICO -> {"bote(s) de lubricante", @g=M}
 
-$LIQUIDO_INCONTABLE -> {"[agua|vino|cerveza|zumo|zumo de $FRUTA|soda|silicona|alcohol|vodka|whisky|ron|
+$LIQUIDO_INCONTABLE -> {"[agua|vino|cerveza|zumo|zumo de $FRUTA|silicona|alcohol|vodka|whisky|ron|
 gazpacho|sidra|ácido sulfúrico|agua oxigenada|aceite $ACEITE_DE_QUE|nitroglicerina|pegamento|mercurio|
 oxígeno|nitrógeno|cloro]", @g=?, @n=S, @s=T}
 
@@ -124,6 +149,14 @@ $VERDURA -> {"calabaza(s)", @g=F}
 $VERDURA -> {"patata(s)", @g=F}
 $VERDURA -> {"coliflor(es)", @g=F}
 $VERDURA -> {"zanahoria(s)", @g=F}
+
+$FRUTOS_VARIADOS -> {"oliva(s)", @g=F}
+$FRUTOS_VARIADOS -> {"almendra(s)", @g=F}
+$FRUTOS_VARIADOS -> {"nue(z|ces)", @g=F}
+$FRUTOS_VARIADOS -> {"avellana(s)", @g=F}
+$FRUTOS_VARIADOS -> {"quico(s)", @g=M}
+$FRUTOS_VARIADOS -> {"cacahuete(s)", @g=M}
+$FRUTOS_VARIADOS -> {"pipa(s)", @g=F}
 
 
 $ACEITE_DE_QUE -> {"[de oliva|de girasol|de semillas|de oliva virgen extra|de motor|de coco|$LAMBDA|$LAMBDA]"}

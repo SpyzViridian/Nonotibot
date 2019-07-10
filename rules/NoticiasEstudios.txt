@@ -1,0 +1,30 @@
+############### NOTICIAS SOBRE ESTUDIOS ###############
+
+$ESTRUCTURA_NOTICIA -> {"$NOTICIA_ESTUDIO"}
+
+$NOTICIA_ESTUDIO -> {"$AUTOR_DEL_ESTUDIO [revela|concluye|señala|afirma|desmiente|niega|advierte] que $SUJETO_DEL_ESTUDIO"}
+
+$AUTOR_DEL_ESTUDIO -> {"[un estudio|un informe|un grupo de investigadores|<un|una> científic<o|a>|<un|una> investigador(a)] de [el CERN|la NASA|el MIT]"}
+$AUTOR_DEL_ESTUDIO -> {"[un estudio|un informe|un grupo de investigadores|<un|una> científic<o|a>|<un|una> investigador(a)] de [una universidad de $PAIS|la Universidad de $CAPITAL_PROVINCIA]"}
+
+$SUJETO_DEL_ESTUDIO -> {"[$SUJETO_DEL_ESTUDIO_ACCION|$SUJETO_DEL_ESTUDIO_EXISTENCIA]"}
+$SUJETO_DEL_ESTUDIO_ACCION -> {"$VERBO_ESTUDIO $EFECTO_DEL_ESTUDIO_ACCION", @g=?, @n=?}
+$SUJETO_DEL_ESTUDIO_ACCION -> {"poseer [$ANIMAL_NOM_INDET|$OBJETO_SINGULAR_O_INCONTABLE] $EFECTO_DEL_ESTUDIO_ACCION", @g=?, @n=S, @s=T}
+
+$SUJETO_DEL_ESTUDIO_EXISTENCIA -> {"el oficio de $OFICIO_SUST $EFECTO_DEL_ESTUDIO_TEMPORAL"}
+$SUJETO_DEL_ESTUDIO_EXISTENCIA  -> {"$SUJETO_TEMPORAL $EFECTO_DEL_ESTUDIO_TEMPORAL"}
+
+$EFECTO_DEL_ESTUDIO_TEMPORAL -> {"[desaparecerá|dejará de existir|no será necesario|será necesario|será imprescindible] $FECHA_FUTURA"}
+$EFECTO_DEL_ESTUDIO_ACCION -> {"$NO [será legal|será ilegal|será necesario|será imprescindible] $FECHA_FUTURA"}
+$EFECTO_DEL_ESTUDIO_ACCION -> {"[aumenta la esperanza de vida|disminuye la esperanza de vida|es malo para la salud|es bueno para la salud|es malo para la economía|es malo para la economía|
+es bueno para la sociedad|es malo para la sociedad|disminuye el valor en bolsa de $OBJETO_SINGULAR $CON_O_SIN_PORCENTAJE|aumenta el valor en bolsa de $OBJETO_SINGULAR $CON_O_SIN_PORCENTAJE|
+aumenta el riesgo de embarazo $CON_O_SIN_PORCENTAJE|aumenta el riesgo de sufrir enfermedades $CON_O_SIN_PORCENTAJE|aumenta el riesgo de muerte $CON_O_SIN_PORCENTAJE|reduce el riesgo de muerte $CON_O_SIN_PORCENTAJE|
+aumenta la ansiedad $CON_O_SIN_PORCENTAJE|aumenta la probabilidad de encontrar trabajo como $OFICIO_SUST $CON_O_SIN_PORCENTAJE|disminuye la probabilidad de encontrar trabajo como $CON_O_SIN_PORCENTAJE
+]"}
+$SUJETO_TEMPORAL -> {"[$ANIMAL_NOM_DET|$OBJETO_SINGULAR]"}
+
+$VERBO_ESTUDIO -> {"[$FORMAS_CON_VERBO|$VERBO]"}
+$CON_O_SIN_PORCENTAJE -> {"[un $PORCENTAJE|$LAMBDA]"}
+
+$FECHA_FUTURA -> {"[en $AÑO_FUTURO|en el futuro|en un futuro cercano|en un futuro lejano|$LAMBDA|$LAMBDA|$LAMBDA]"}
+$AÑO_FUTURO -> {"[2025|2026|2027|2028|2029|2030|2031|2032|2033|2034|2035|2036|2037|2038|2039|2040|2041|2042|2043|2044|2045|2046|2047|2048|2049|2050|2051|2052|2053|2054|2055|2056|2057|2058|2059|2060|2061|2062|2063|2064|2065|2066|2067|2068|2069|2070|2071|2072|2073|2074|2075|2076|2077|2078|2079|2080|2081|2082|2083|2084|2085|2086|2087|2088|2089|2090|2091|2092|2093|2094|2095|2096|2097|2098|2099]"}

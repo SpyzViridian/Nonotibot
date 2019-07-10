@@ -5,6 +5,7 @@ $ARTICULO_INDET -> {"<un(os)|una(s)>"}
 $ARTICULO_INDET_CARD -> {"[$ARTICULO_INDET|$ARTICULO_CARDINAL]"}
 $ARTICULO_CARDINAL -> {"<un|una>", @n=S}
 $ARTICULO_CARDINAL -> {"[dos|tres|cuatro|cinco|seis|siete|ocho|nueve]", @n=P}
+$POSESIVO_MI -> {"(mi|mis)"}
 
 $NUMERO_2_10 -> {"[dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez]"}
 $NUMERO_11_20 -> {"[once|doce|trece|catorce|quince|16|17|18|19|20]"}

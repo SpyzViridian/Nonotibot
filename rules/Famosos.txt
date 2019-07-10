@@ -99,14 +99,55 @@ Nacho Vidal|
 Pablo Alborán|
 Pedro Almodóvar|
 Arturo Valls|
-el youtuber 'Dalas Review'|
-el youtuber 'El Rubius'|
-el youtuber 'Wismichu'|
-el youtuber 'Auronplay'|
-el youtuber 'Pewdiepie'|
-el youtuber 'Alexelcapo'|
-el youtuber 'WillyRex'|
-el youtuber 'Vegeta777'
+Javier Bardem|
+Javier Cárdenas|
+Carlos Herrera|
+José Luis Gil|
+Patricia Conde|
+Kiko Rivera|
+Paco León|
+Risto Mejide|
+Santiago Segura|
+Jorge Javier Vázquez|
+Michael Jordan|
+Fernando Tejero|
+Tom Holland|
+John Cena|
+Ángel Martín|
+Tiger Woods|
+Vladimir Putin|
+Carlos Areces|
+Joaquín Sevilla|
+Daniel Radcliffe|
+Robert Downey Jr.|
+Bradley Cooper|
+Jeremy Irons|
+El Cigala|
+El Sevilla|
+Jim Parsons|
+Owen Wilson|
+John Travolta|
+Rowan Atkinson|
+Ben Affleck|
+el Papa|
+Zac Efron|
+Matthew Perry|
+Amancio Ortega|
+Neil Patrick Harris|
+el Dalai Lama|
+Chuck Norris|
+George Bush|
+Elon Musk|
+Emmanuel Macron|
+Jordi Hurtado|
+el youtuber ''Dalas Review''|
+el youtuber ''El Rubius''|
+el youtuber ''Wismichu''|
+el youtuber ''Auronplay''|
+el youtuber ''Pewdiepie''|
+el youtuber ''Alexelcapo''|
+el youtuber ''WillyRex''|
+el youtuber ''Vegeta777''
 ]"}
 
 $FAM_MUJER -> {"[
@@ -115,7 +156,6 @@ Eva Hache|
 Katy Perry|
 Mónica Naranjo|
 Angelina Jolie|
-Mónica Naranjo|
 Jennifer Aniston|
 Sandra Bullock|
 Cameron Diaz|
@@ -148,6 +188,7 @@ Angela Merkel|
 Malú|
 Adele|
 Carla Bruni|
+la Reina Elizabeth II|
 Emma Watson|
 Jennifer Lopez|
 Nicky Minaj|
@@ -163,6 +204,39 @@ Dulceida|
 Elsa Pataky|
 Mónica Carrillo|
 Susana Griso|
-
-Inés Arrimadas
+Isabel Pantoja|
+María Isabel|
+Belén Esteban|
+María Patiño|
+Ana Obregón|
+Lydia Valentín|
+Carmen Lomana|
+Mireia Belmonte|
+Jennifer Lawrence|
+Inés Arrimadas|
+Amaral|
+Emma Stone|
+Oprah|
+Ellen DeGeneres|
+Beyoncé|
+Lady Gaga|
+Marie Kondo|
+Avril Lavigne|
+Olivia Newton Jones|
+J. K. Rowling|
+Rihanna|
+Yoko Ono|
+Serena Williams|
+Venus Williams|
+Britney Spears|
+Kim Kardashian|
+Melania Trump|
+Silvia Abril|
+Felicity Jones|
+Becky G|
+Rocío Durcal|
+Leticia Sabater|
+Laura Gallego|
+Ana Patricia Botín|
+Rozalén
 ]"}
