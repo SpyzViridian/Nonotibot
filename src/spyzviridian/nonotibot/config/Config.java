@@ -21,10 +21,11 @@ public class Config extends PropertyFile {
 	
 	public static enum Property {
 		BOT_NAME("botName", "The bot's Twitter account, without @"), 
-		ORIGINAL_USER("originalUser", "The Twitter account you want to learn tweets from, without @"), 
 		TWEET_RATE("tweetRate", "The amount of time, in secound, between tweets"),
 		STARTING_RULE("startingRule", "The first rule to generate text."),
-		SPANISH_CONTRACTIONS("spanishContractions", "[true/false] automatically replaces \"de el\" with \"del\" and \"a el\" with \"al\".")
+		SPANISH_CONTRACTIONS("spanishContractions", "[true/false] automatically replaces \"de el\" with \"del\" and \"a el\" with \"al\"."),
+		SPANISH_Y_TO_E("spanishYtoE", "[true/false] automatically replaces \"y I\" with \"e I\"."),
+		OFFLINE_MODE("offlineMode", "[true/false] If this is true, the bot won't try to connect to Twitter.")
 		;
 		
 		private String name;
@@ -71,12 +72,13 @@ public class Config extends PropertyFile {
 		logWriter.println();
 		logWriter.println("# [USER CONFIGURATION]");
 		printDefaultProperty(logWriter, Config.Property.BOT_NAME);
-		printDefaultProperty(logWriter, Config.Property.ORIGINAL_USER);
 		logWriter.println("# =================================================================================");
 		logWriter.println("# [BOT CONFIGURATION]");
 		printDefaultProperty(logWriter, Config.Property.TWEET_RATE);
 		printDefaultProperty(logWriter, Config.Property.STARTING_RULE);
+		printDefaultProperty(logWriter, Config.Property.OFFLINE_MODE);
 		printDefaultProperty(logWriter, Config.Property.SPANISH_CONTRACTIONS);
+		printDefaultProperty(logWriter, Config.Property.SPANISH_Y_TO_E);
 		logWriter.flush();
 		logWriter.close();
 	}
@@ -85,10 +87,11 @@ public class Config extends PropertyFile {
 	protected String getDefaultProperty(String property) {
 		switch(property){
 			case "botName": return "...";
-			case "originalUser": return "...";
-			case "tweetRate": return "3600";
+			case "tweetRate": return "1800";
+			case "offlineMode": return "true";
 			case "startingRule": return "$$$";
 			case "spanishContractions": return "true";
+			case "spanishYtoE": return "true";
 		}
 		return null;
 	}
