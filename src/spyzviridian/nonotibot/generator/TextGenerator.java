@@ -28,7 +28,9 @@ public class TextGenerator {
 			ruleList = RuleList.getInstance();
 			start(Config.getInstance().getProperty(Config.Property.STARTING_RULE));
 		} while (buffer.length() > maxLength);
-		String result = buffer.toString();
+		String result = buffer.toString().trim();
+		if(Config.getInstance().getProperty(Config.Property.SPANISH_CONTRACTIONS).equalsIgnoreCase("true"))
+			result = spanishContraction(result);
 		result = firstCharacterToUpperCase(result);
 		result = cutExtraSpaces(result);
 		return result;
@@ -140,5 +142,9 @@ public class TextGenerator {
 	
 	private String cutExtraSpaces(String str){
 		return str.replaceAll("\\s\\s+", " ");
+	}
+	
+	private String spanishContraction(String str) {
+		return str.replaceAll(" a el ", " al ").replaceAll(" de el ", " del ");
 	}
 }

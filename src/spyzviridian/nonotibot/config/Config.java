@@ -23,7 +23,8 @@ public class Config extends PropertyFile {
 		BOT_NAME("botName", "The bot's Twitter account, without @"), 
 		ORIGINAL_USER("originalUser", "The Twitter account you want to learn tweets from, without @"), 
 		TWEET_RATE("tweetRate", "The amount of time, in secound, between tweets"),
-		STARTING_RULE("startingRule", "The first rule to generate text.")
+		STARTING_RULE("startingRule", "The first rule to generate text."),
+		SPANISH_CONTRACTIONS("spanishContractions", "[true/false] automatically replaces \"de el\" with \"del\" and \"a el\" with \"al\".")
 		;
 		
 		private String name;
@@ -75,6 +76,7 @@ public class Config extends PropertyFile {
 		logWriter.println("# [BOT CONFIGURATION]");
 		printDefaultProperty(logWriter, Config.Property.TWEET_RATE);
 		printDefaultProperty(logWriter, Config.Property.STARTING_RULE);
+		printDefaultProperty(logWriter, Config.Property.SPANISH_CONTRACTIONS);
 		logWriter.flush();
 		logWriter.close();
 	}
@@ -86,6 +88,7 @@ public class Config extends PropertyFile {
 			case "originalUser": return "...";
 			case "tweetRate": return "3600";
 			case "startingRule": return "$$$";
+			case "spanishContractions": return "true";
 		}
 		return null;
 	}

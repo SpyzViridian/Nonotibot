@@ -1,6 +1,8 @@
-### INICIO ###
+################## INICIO ##################
 
 $$$ -> {"$INICIO"}
 $LAMBDA -> {_}
 $INICIO -> {"$ESTRUCTURA_TITULAR", @g=?, @n=?}
 $ESTRUCTURA_TITULAR -> {"$NOTICIA"}
+
+$NOTICIA -> {"$ESTRUCTURA_NOTICIA"}

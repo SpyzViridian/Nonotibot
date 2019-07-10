@@ -1,4 +1,4 @@
-### PAISES ###
+################## PAISES ##################
 
 $PAIS -> {"[
 Afganistán|
@@ -18,7 +18,6 @@ Bahamas|
 Bangladesh|
 Bielorrusia|
 Bélgica|
-Belice|
 Bolivia|
 Bosnia y Herzegovina|
 Botsuana|
@@ -36,7 +35,6 @@ El Vaticano|
 Colombia|
 Corea del Norte|
 Corea del Sur|
-Costa de Marfil|
 Costa Rica|
 Croacia|
 Cuba|

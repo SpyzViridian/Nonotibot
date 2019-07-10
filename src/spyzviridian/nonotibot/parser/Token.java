@@ -17,7 +17,7 @@ public class Token {
 		LAMBDA("_"),
 		TEXT("\".+?\""),
 		COMMA(","),
-		LITERALS("[0-9a-zA-Z\u00C0-\u024F\u1E00-\u1EFF,.:&%'\\-€+ _]+"),
+		LITERALS("[0-9a-zA-Z\u00C0-\u024F\u1E00-\u1EFF,.:&%'\\-€+ _¿?]+"),
 		PROPERTY("(@[a-zA-Z])=([a-zA-Z]|\\?)"),
 		EQUALS("="),
 		SEMICOLON(";"),
