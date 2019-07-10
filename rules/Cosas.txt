@@ -1,0 +1,130 @@
+############### COSAS ###############
+
+$COSA -> {"[$OBJETO_CONTABLE|$LIQUIDO_INCONTABLE]"}
+
+$CON_COSA -> {"$OBJETO_CONTABLE_PLURAL", @n=P, @s=T}
+$CON_COSA -> {"$LIQUIDO_INCONTABLE", @n=S, @s=T}
+$OBJETO_CONTABLE_PLURAL -> {"$OBJETO", @n=P}
+
+$OBJETO -> {"$OBJETO_CONTABLE"}
+$OBJETO_INDET -> {"$ARTICULO_INDET $OBJETO"}
+
+$OBJETO_CONTABLE -> {"[$HERRAMIENTA|$MUEBLE|$INSTRUMENTO|$VEHICULO|$FRUTA|$VERDURA|$OBJETO_OTRO]"}
+$ALIMENTO -> {"[$FRUTA|$VERDURA]"}
+
+$HERRAMIENTA -> {"alicates", @g=M, @n=P}
+$HERRAMIENTA -> {"tenazas", @g=F, @n=P}
+$HERRAMIENTA -> {"martillo(s)", @g=M}
+$HERRAMIENTA -> {"desatascador(es)", @g=M}
+$HERRAMIENTA -> {"espátula(s)", @g=F}
+$HERRAMIENTA -> {"hacha", @g=M, @n=S}
+$HERRAMIENTA -> {"hachas", @g=F, @n=P}
+$HERRAMIENTA -> {"destornillador(es)", @g=M}
+$HERRAMIENTA -> {"cuchillo(s)", @g=M}
+$HERRAMIENTA -> {"pinza(s)", @g=F}
+$HERRAMIENTA -> {"sierra(s)", @g=F}
+$HERRAMIENTA -> {"motosierra(s)", @g=F}
+$HERRAMIENTA -> {"regla(s)", @g=F}
+
+$MUEBLE -> {"armario(s)", @g=M}
+$MUEBLE -> {"mesa(s)", @g=F}
+$MUEBLE -> {"silla(s)", @g=F}
+$MUEBLE -> {"cama(s)", @g=F}
+$MUEBLE -> {"sill(ón|ones)", @g=M}
+$MUEBLE -> {"nevera(s)", @g=F}
+$MUEBLE -> {"lavadora(s)", @g=F}
+$MUEBLE -> {"secadora(s)", @g=F}
+$MUEBLE -> {"inodoro(s)", @g=M}
+$MUEBLE -> {"estantería(s)", @g=F}
+
+$INSTRUMENTO -> {"piano(s)", @g=M}
+$INSTRUMENTO -> {"guitarra(s)", @g=F}
+$INSTRUMENTO -> {"batería(s)", @g=F}
+$INSTRUMENTO -> {"clarinete(s)", @g=M}
+$INSTRUMENTO -> {"flauta(s)", @g=F}
+$INSTRUMENTO -> {"oboe(s)", @g=M}
+$INSTRUMENTO -> {"saxof(ón|ones)", @g=M}
+$INSTRUMENTO -> {"trompeta(s)", @g=F}
+$INSTRUMENTO -> {"viol(ín|ines)", @g=M}
+$INSTRUMENTO -> {"violonchelo(s)", @g=M}
+$INSTRUMENTO -> {"viola(s)", @g=F}
+$INSTRUMENTO -> {"armónica(s)", @g=F}
+$INSTRUMENTO -> {"xilófono(s)", @g=M}
+$INSTRUMENTO -> {"tambor(es)", @g=M}
+$INSTRUMENTO -> {"ukelele(s)", @g=M}
+
+$VEHICULO -> {"helicóptero(s)", @g=M}
+$VEHICULO -> {"barco(s)", @g=M}
+$VEHICULO -> {"coche(s)", @g=M}
+$VEHICULO -> {"moto(s)", @g=F}
+$VEHICULO -> {"avi(ón|ones)", @g=M}
+$VEHICULO -> {"velero(s)", @g=M}
+$VEHICULO -> {"tren(es)", @g=M}
+$VEHICULO -> {"tractor(es)", @g=M}
+$VEHICULO -> {"autob(ús|uses)", @g=M}
+$VEHICULO -> {"cami(ón|ones)", @g=M}
+$VEHICULO -> {"furgoneta(s)", @g=F}
+$VEHICULO -> {"bicicleta(s)", @g=F}
+
+$OBJETO_OTRO -> {"pelota(s) $PELOTA_DE_QUE", @g=F}
+$OBJETO_OTRO -> {"palo(s)", @g=M}
+$OBJETO_OTRO -> {"astilla(s)", @g=F}
+$OBJETO_OTRO -> {"palo(s)", @g=M}
+$OBJETO_OTRO -> {"llave(s)", @g=F}
+$OBJETO_OTRO -> {"raqueta(s)", @g=F}
+$OBJETO_OTRO -> {"bombilla(s)", @g=F}
+$OBJETO_OTRO -> {"bala(s)", @g=F}
+$OBJETO_OTRO -> {"globo(s)", @g=M}
+$OBJETO_OTRO -> {"roca(s)", @g=F}
+$OBJETO_OTRO -> {"goma(s)", @g=F}
+$OBJETO_OTRO -> {"cuchara(s)", @g=F}
+$OBJETO_OTRO -> {"tenedor(es)", @g=M}
+$OBJETO_OTRO -> {"tenedor(es)", @g=M}
+$OBJETO_OTRO -> {"vaso(s)", @g=M}
+$OBJETO_OTRO -> {"plato(s)", @g=M}
+$OBJETO_OTRO -> {"lámpara(s)", @g=F}
+$OBJETO_OTRO -> {"tap(ón|ones)", @g=M}
+$OBJETO_OTRO -> {"botella de $LIQUIDO_INCONTABLE", @g=F}
+$OBJETO_OTRO -> {"bote de $LIQUIDO_INCONTABLE", @g=M}
+$OBJETO_OTRO -> {"$OBJETO_EROTICO", @g=M}
+
+$OBJETO_EROTICO -> {"consolador(es)", @g=M}
+$OBJETO_EROTICO -> {"vibrador(es)", @g=M}
+$OBJETO_EROTICO -> {"cond(ón|ones)", @g=M}
+$OBJETO_EROTICO -> {"bote(s) de lubricante", @g=M}
+
+$LIQUIDO_INCONTABLE -> {"[agua|vino|cerveza|zumo|zumo de $FRUTA|soda|silicona|alcohol|vodka|whisky|ron|
+gazpacho|sidra|ácido sulfúrico|agua oxigenada|aceite $ACEITE_DE_QUE|nitroglicerina|pegamento|mercurio|
+oxígeno|nitrógeno|cloro]", @g=?, @n=S, @s=T}
+
+$FRUTA -> {"naranja(s)", @g=F}
+$FRUTA -> {"manzana(s)", @g=F}
+$FRUTA -> {"lim(ón|ones)", @g=M}
+$FRUTA -> {"uva(s)", @g=F}
+$FRUTA -> {"piña", @g=F}
+$FRUTA -> {"pomelo(s)", @g=M}
+$FRUTA -> {"sandía(s)", @g=F}
+$FRUTA -> {"mel(ón|ones)", @g=M}
+$FRUTA -> {"albaricoque(s)", @g=M}
+$FRUTA -> {"melocot(ón|ones)", @g=M}
+$FRUTA -> {"mango(s)", @g=M}
+$FRUTA -> {"lima(s)", @g=F}
+$FRUTA -> {"fresa(s)", @g=F}
+
+$VERDURA -> {"tomate(s)", @g=M}
+$VERDURA -> {"cebolla(s)", @g=F}
+$VERDURA -> {"ajo(s)", @g=M}
+$VERDURA -> {"pimiento(s)", @g=M}
+$VERDURA -> {"puerro(s)", @g=M}
+$VERDURA -> {"nabo(s)", @g=M}
+$VERDURA -> {"berenjena(s)", @g=F}
+$VERDURA -> {"lechuga(s)", @g=F}
+$VERDURA -> {"apio(s)", @g=M}
+$VERDURA -> {"calabaza(s)", @g=F}
+$VERDURA -> {"patata(s)", @g=F}
+$VERDURA -> {"coliflor(es)", @g=F}
+$VERDURA -> {"zanahoria(s)", @g=F}
+
+
+$ACEITE_DE_QUE -> {"[de oliva|de girasol|de semillas|de oliva virgen extra|de motor|de coco|$LAMBDA|$LAMBDA]"}
+$PELOTA_DE_QUE -> {"[de tenis|de fútbol|de baloncesto|de playa|$LAMBDA|$LAMBDA]"}

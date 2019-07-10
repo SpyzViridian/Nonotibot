@@ -1,0 +1,12 @@
+############### NOTICIAS DE CRIMENES O DELITOS ###############
+$ESTRUCTURA_NOTICIA -> {"$NOTICIA_DELITO"}
+
+$NOTICIA_DELITO -> {"$PERSONA $ESTADO_PERSONA_DELITO por [presuntamente|$LAMBDA] $VERBO_CON_A $COMO_VERBO a $SUJETO", @g=?, @n=?}
+$NOTICIA_DELITO -> {"$PERSONA $ACUSACION de[, presuntamente,|$LAMBDA] $VERBO_CON_A $COMO_VERBO a $SUJETO", @g=?, @n=?}
+$NOTICIA_DELITO -> {"$PERSONA $ACUSACION de[, presuntamente,|$LAMBDA] $VERBO_CON_CON con [$CON_COSA|$SUJETO]", @g=?, @n=?}
+
+$ESTADO_PERSONA_DELITO -> {"[a juicio|a prisión|en prisión preventiva|detenid<o|a>(s)|detenid<o|a>(s) por la policía|
+detenid<o|a(s) por la interpol|detenid<o|a>(s) por la Guardia Civil|pasa(n) la noche en el calabozo|retenid<o|a>(s) en la frontera con $PAIS]"}
+$ACUSACION -> {"acusad<o|a>(s)"}
+$COMO_VERBO -> {"[$NUMERO_2_20 veces|ilegalmente|a sangre fría|alocadamente|numerosas veces|en numerosas ocasiones|en múltiples ocasiones|varias veces|frecuentemente|constantemente]"}
+$COMO_VERBO -> {"$LAMBDA"}

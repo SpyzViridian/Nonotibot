@@ -1,0 +1,16 @@
+$VERBO -> {"[$VERBO_CON_CON|$VERBO_CON_A]"}
+
+$VERBO_REFLEXIVO -> {"[peinarse|ducharse|suicidarse|dormirse]"}
+$VERBO_CON_A -> {"[
+acariciar|besar|esnifar|tirar|destrozar|matar|apuñalar|
+disparar|insultar|aplastar|manosear|tocar|insinuarse|toquetear|robar|
+intimidar|despreciar|interrumpir|molestar|empujar|pegar|acosar
+]"}
+
+$VERBO_CON_CON -> {"$VERBO_REFLEXIVO"}
+$VERBO_CON_CON -> {"[
+comer|dormir|jugar|estudiar|conducir|beber|fumar|traficar|pagar $PAGAR_COMO|negociar|mantener relaciones sexuales|intimar
+]"}
+
+$PAGAR_COMO -> {"[en negro|$LAMBDA]"}
+

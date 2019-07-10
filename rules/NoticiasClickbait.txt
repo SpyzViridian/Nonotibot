@@ -1,0 +1,33 @@
+############### NOTICIAS CLICKBAIT ###############
+
+$ESTRUCTURA_NOTICIA -> {"$NOTICIA_CLICKBAIT"}
+
+$NOTICIA_CLICKBAIT -> {"[$FAMOSO revela sus |$LAMBDA|$LAMBDA|$LAMBDA|$LAMBDA] $NUMERO_2_20 trucos [con $OBJETO|con $OBJETO|con $OBJETO|$LAMBDA] $OBJETIVO_TRUCO", @g=?, @n=P, @s=T}
+$NOTICIA_CLICKBAIT -> {"$CONSEJO_SINGULAR_COMO: $NUMERO_2_20 $FORMAS_TRUCO", @g=?, @n=P, @s=T}
+$NOTICIA_CLICKBAIT -> {"$NUMERO_2_20 $FORMAS_TRUCO con $OBJETO_PLURAL_SIN_ARTICULO", @g=?, @n=P, @s=T}
+$NOTICIA_CLICKBAIT -> {"$CONSEJO_SINGULAR_SIN_ARTICULO y $CONSEJO_SINGULAR_SIN_ARTICULO: [una combinación peligrosa|una combinación interesante|una receta mortal|un par milagroso|$NUMERO_O_LAMBDA $FORMAS_TRUCO|una combinación cancerígena]", @g=?, @n=P, @s=T}
+
+$OBJETIVO_TRUCO -> {"[
+para aliviar el $DOLOR_DE_QUE|
+para mantenerse sano|
+para aliviar el estrés|
+para rejuvenecerse|
+para dormir|
+para decorar el hogar|
+para encontrar trabajo|
+para montar tu propia empresa
+]"}
+
+$FORMAS_TRUCO -> {"[formas de|trucos para|consejos para|trucos milagrosos para] [aliviar el $DOLOR_DE_QUE|relajar la tensión|ganar dinero|hacerse famoso]"}
+$FORMAS_TRUCO -> {"recetas [interesantes|especiales|exquisitas|de alta cocina]"}
+$FORMAS_TRUCO -> {"[curiosidades|datos|datos interesantes|datos curiosos] que [desconocías|no sabías|nunca te han contado]"}
+
+$DOLOR_DE_QUE -> {"dolor [de $PARTE_CUERPO|$LAMBDA]", @n=P, @s=T}
+$OBJETO_PLURAL -> {"$ARTICULO_DET $OBJETO", @n=P, @s=T}
+$OBJETO_PLURAL_SIN_ARTICULO -> {"[$OBJETO|$LIQUIDO_INCONTABLE]", @n=P, @s=T}
+$OBJETO_SINGULAR -> {"$ARTICULO_DET $OBJETO", @n=S, @s=T}
+$CONSEJO_SINGULAR -> {"[$OBJETO_SINGULAR|$VERBO]"}
+$CONSEJO_SINGULAR_COMO -> {"[$OBJETO_SINGULAR|cómo $VERBO]"}
+$CONSEJO_SINGULAR_SIN_ARTICULO -> {"[$OBJETO_PLURAL_SIN_ARTICULO|$VERBO|$LUGAR_CONSEJO]"}
+$NUMERO_O_LAMBDA -> {"[$NUMERO_2_20|$LAMBDA]"}
+$LUGAR_CONSEJO -> {"[$PAIS|$CAPITAL_PROVINCIA]"}

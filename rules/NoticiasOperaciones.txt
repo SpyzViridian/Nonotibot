@@ -1,0 +1,49 @@
+############### NOTICIAS DE OPERACION ###############
+
+$ESTRUCTURA_NOTICIA -> {"$NOTICIA_OPERACION"}
+
+$NOTICIA_OPERACION -> {"$QUE_OCURRE_OPERACION en una operación $EXPLICACION_OPERACION", @n=s, @s=T}
+$NOTICIA_OPERACION -> {"una [simple|sencilla|arriesgada|complicada|$LAMBDA|$LAMBDA|delicada] operación de $PARTE_CUERPO_SINGULAR $DURANTE_OPERACION", @n=S, @s=T}
+$NOTICIA_OPERACION -> {"extraen $OPERACION_EXTRAE [de $SINTAGMA_PARTE_CUERPO_SINGULAR de $PERSONA|de $SUJETO]", @n=S, @s=T}
+$NOTICIA_OPERACION -> {"una [nueva|pionera|revolucionaria|experimental] técnica de operar con $OBJETO_INDET $OPERACION_REVOLUCIONARIA", @n=S, @s=T}
+$NOTICIA_OPERACION -> {"[cirujanos|$LAMBDA] descubren una [nueva|pionera|revolucionaria|experimental] forma de realizar operaciones de $PARTE_CUERPO_SINGULAR con $OBJETO_INDET", @n=S, @s=T}
+$NOTICIA_OPERACION -> {"<un|una> cirujan<o|a> realiza una [nueva|pionera|revolucionaria|experimental] operación de $PARTE_CUERPO_SINGULAR con $OBJETO_INDET", @n=S, @s=T}
+$NOTICIA_OPERACION -> {"[encuentran|hayan] $LIQUIDO_INCONTABLE en [la sangre|la orina|las heces] de $SUJETO", @n=S, @s=T}
+$NOTICIA_OPERACION -> {"[médicos|cirujanos] [atónitos|sorprendidos] al [encontrar|hallar|descubrir] $OBJETO_EXTRAIDO en $SINTAGMA_PARTE_CUERPO_SINGULAR de $PERSONA", @n=S, @s=T}
+$NOTICIA_OPERACION -> {"$PERSONA $EFECTO_MEDICO [al|tras|después de] [$RECIBIR_GOLPE|$OTRA_ACCION_MEDICA]", @n=?, @g=?}
+
+$QUE_OCURRE_OPERACION -> {"[fallece $PERSONA|$PERSONA muere]"}
+$QUE_OCURRE_OPERACION -> {"[termina|acaba] en [coma|estado leve|estado grave|estado crítico]"}
+
+$DURANTE_OPERACION -> {"[acaba|termina] con la vida de $PERSONA $EXPLICACION_OPERACION", @g=?, @n=?}
+$DURANTE_OPERACION -> {"se [ve interrumpida|complica|alarga] $EXPLICACION_OPERACION", @g=?, @n=?}
+$DURANTE_OPERACION -> {"[acaba|termina] en tragedia $EXPLICACION_OPERACION", @g=?, @n=?}
+
+$EXPLICACION_OPERACION -> {"cuando [se|$LAMBDA] [encuentran|olvidan] $OBJETO_EXTRAIDO en $SINTAGMA_PARTE_CUERPO_SINGULAR"}
+$EXPLICACION_OPERACION -> {"al extirpar $SINTAGMA_PARTE_CUERPO_SINGULAR accidentalmente"}
+$EXPLICACION_OPERACION -> {"cuando <el|la> cirujan<o|a> decide $VERBO_CON_A a <el|la> paciente"}
+$EXPLICACION_OPERACION -> {"cuando $IRRUPTOR_OPERACION", @g=?, @n=?}
+
+$PARTE_CUERPO_SINGULAR -> {"$PARTE_CUERPO", @n=S, @s=T}
+$SINTAGMA_PARTE_CUERPO_SINGULAR -> {"$SINTAGMA_PARTE_CUERPO", @n=S, @s=T}
+$IRRUPTOR_OPERACION -> {"$SUJETO [entra(n)|irrumpe(n)] $COMO_IRRUMPE en el quirófano"}
+$COMO_IRRUMPE -> {"[alocadamente|imprevisiblemente|forzosamente|$LAMBDA|$LAMBDA]"}
+
+$OPERACION_REVOLUCIONARIA -> {"permite realizar operaciones de $PARTE_CUERPO_SINGULAR [con mayor facilidad|con mejores probabilidades de supervivencia|fácilmente|casi sin esfuerzo]"}
+$OPERACION_REVOLUCIONARIA -> {"$DURANTE_OPERACION"}
+
+$OPERACION_EXTRAE -> {"$OBJETO_EXTRAIDO", @g=?, @n=?}
+$OPERACION_EXTRAE -> {"$LIQUIDO_INCONTABLE"}
+$OBJETO_EXTRAIDO -> {"$ARTICULO_INDET $OBJETO", @n=S}
+$OBJETO_EXTRAIDO -> {"$ARTICULO_CARDINAL $OBJETO", @n=P, @s=T}
+
+$EFECTO_MEDICO -> {"[muere(n)|fallece(n)|acaba(n) en el hospital|en estado leve|en estado grave|en coma|pierde(n) la vida|en estado crítico]"}
+$RECIBIR_GOLPE -> {"[ser golpead<o|a>(s) $RECIBIR_CUANTAS_VECES|recibir $RECIBIR_GOLPE] en $SINTAGMA_PARTE_CUERPO_SINGULAR $GOLPEADO_CON_QUE", @n=?}
+$RECIBIR_CUANTOS_GOLPES -> {"un golpe", @n=S}
+$RECIBIR_CUANTOS_GOLPES -> {"$NUMERO_2_20 golpes", @n=P}
+$RECIBIR_CUANTAS_VECES -> {"[$NUMERO_2_20 veces|$LAMBDA|$LAMBDA]"}
+$GOLPEADO_CON_QUE -> {"con $OBJETO_INDET", @n=S, @s=T}
+$GOLPEADO_CON_QUE -> {"$LAMBDA", @n=S, @s=T}
+$OTRA_ACCION_MEDICA -> {"$VERBO_CON_A a $SUJETO", @g=?, @n=?}
+$OTRA_ACCION_MEDICA -> {"$VERBO_CON_CON con [$SUJETO|$CON_COSA]", @g=?, @n=?}
+

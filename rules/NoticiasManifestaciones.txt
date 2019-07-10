@@ -1,0 +1,40 @@
+############### NOTICIAS DE MANIFESTACIONES ###############
+
+$ESTRUCTURA_NOTICIA -> {"$NOTICIA_MANIFESTACION", @g=?, @n=?}
+
+$NOTICIA_MANIFESTACION -> {"$SUJETO_MANIFESTANTES se manifiesta(n) contra $OBJETIVO_MANIFIESTO"}
+$NOTICIA_MANIFESTACION -> {"$SUJETO_MANIFESTANTES se manifiesta(n) en contra de $OBJETIVO_MANIFIESTO_VERBO"}
+$NOTICIA_MANIFESTACION -> {"una manifestación en contra de $OBJETIVO_MANIFIESTO $SUCESO_MANIFESTACION"}
+$NOTICIA_MANIFESTACION -> {"una [manifestación|protesta] [en $PAIS|en $CAPITAL_PROVINCIA|$LAMBDA] $SUCESO_MANIFESTACION"}
+
+$SUJETO_MANIFESTANTES -> {"[jóvenes|jubilados|sindicatos|trabajadores] [de $PAIS|de $CAPITAL_PROVINCIA|$LAMBDA|$LAMBDA]", @n=P}
+$SUJETO_MANIFESTANTES -> {"un grupo de [jóvenes|jubilados|trabajadores] [de $PAIS|de $CAPITAL_PROVINCIA|$LAMBDA|$LAMBDA]", @n=S}
+$SUJETO_MANIFESTANTES -> {"$PERSONA", @n=S}
+
+$SUCESO_MANIFESTACION -> {"[acaba|termina] [mal|terriblemente|horriblemente] $COMO_TERMINA_MANIFESTACION", @g=?, @n=?}
+$COMO_TERMINA_MANIFESTACION -> {"cuando $SUJETO_MANI_SUCESO $COMO_INCIDENTE_SUJETO", @g=?, @n=?}
+$COMO_TERMINA_MANIFESTACION -> {"cuando $SUCESO_MANI_DELITO", @g=?, @n=?, @s=T}
+$SUCESO_MANI_DELITO -> {"$SUJETO [se pus(o|ieron)|empez(ó|aron)|comenz(ó|aron)] [presuntamente|$LAMBDA] a [$VERBO_CON_A $COMO_VERBO a $SUJETO_ALETORIO|$VERBO_CON_MANI]"}
+$VERBO_CON_MANI -> {"$VERBO_CON_CON con [$SUJETO|$CON_COSA]", @n=?, @g=?}
+$COMO_INCIDENTE_SUJETO -> {"al ser [presuntamente|$LAMBDA] [pisotead<o|a>(s)|arrollad<o|a>(s)|apalizad<o|a>(s)] por la multitud"}
+$COMO_INCIDENTE_SUJETO -> {"al recibir [presuntamente|$LAMBDA] [el ataque|una paliza|una agresión] de $SUJETO", @g=?, @n=?}
+$COMO_INCIDENTE_SUJETO -> {"al recibir [presuntamente|$LAMBDA] un golpe en $SINTAGMA_PARTE_CUERPO_SINGULAR [con $RECIBE_GOLPE_CON|$LAMBDA]", @g=?, @n=?}
+$COMO_INCIDENTE_SUJETO -> {"$LAMBDA"}
+
+$SUJETO_ALETORIO -> {"$SUJETO", @g=?, @n=?}
+$SUJETO_MANI_SUCESO -> {"$PERSONA [muere(n)|pierde(n) el conocimiento|(es|son) herid<o|a>(s)|resulta(n) herid<o|a>(s)]"}
+$RECIBE_GOLPE_CON -> {"$ARTICULO_INDET $OBJETO", @n=S, @s=T}
+
+$OBJETIVO_MANIFIESTO_VERBO -> {"$VERBO_CON_CON $CON_ALGO_O_SIN_NADA"}
+$CON_ALGO_O_SIN_NADA -> {"con [$SUJETO_ALETORIO|$CON_COSA]"}
+$CON_ALGO_O_SIN_NADA -> {"$LAMBDA"}
+$OBJETIVO_MANIFIESTO -> {"$SUJETO"}
+$OBJETIVO_MANIFIESTO -> {"el uso de $OBJETO_MANI", @n=P}
+$OBJETIVO_MANIFIESTO -> {"$OBJETO_MANI", @n=P}
+$OBJETIVO_MANIFIESTO -> {"$FAMOSO", @n=S}
+$OBJETIVO_MANIFIESTO -> {"[la subida de impuestos|el Gobierno|el racismo|el aborto|la xenofobia|
+la homofobia|la subida de precio de $OBJETO_SINGULAR|el precio de $OBJETO_SINGULAR|el precio de alquiler|el coste de la vivienda]"}
+
+$OBJETO_MANI -> {"$ARTICULO_DET $OBJETO"}
+
+
