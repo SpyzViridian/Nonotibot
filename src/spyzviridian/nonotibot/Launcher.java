@@ -1,10 +1,12 @@
 package spyzviridian.nonotibot;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Timer;
 
+import spyzviridian.nonotibot.config.Auth;
 import spyzviridian.nonotibot.config.Config;
 import spyzviridian.nonotibot.exception.TextGeneratorException;
 import spyzviridian.nonotibot.generator.TextGenerator;
@@ -17,8 +19,18 @@ public class Launcher {
 	private static final int MAX_LENGTH = 250;
 	
 	private static Timer tweetingTimer;
+	private static File rulesPath;
 
 	public static void main(String[] args) throws IOException {
+		rulesPath = new File(RULES_PATH);
+		// Create the directory if it doesn't exist
+		if(!rulesPath.exists()) {
+			rulesPath.mkdirs();
+		}
+		
+		Config.getInstance();
+		Auth.getInstance();
+		
 		// Get all rules and add them to the main list
 		Output.getInstance().printLine("Loading rules...", Output.Type.INFO);
 		FolderParser parser = new FolderParser(RULES_PATH);
@@ -41,7 +53,7 @@ public class Launcher {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		while(reader.readLine() != null){
 			try {
-				System.out.print(generator.generate());
+				Output.getInstance().printLine(generator.generate(), Output.Type.TESTING);
 			} catch (TextGeneratorException e) {
 				Output.getInstance().printLine("(" + e.getString() + ", current identifier: " + e.getExpandedIdentifier() + ") " + e.getMessage(), Output.Type.ERROR);
 			}

@@ -65,6 +65,8 @@ public class Auth extends PropertyFile {
 		logWriter.println(Auth.Property.ACCESS_SECRET+"="+getDefaultProperty(Auth.Property.ACCESS_SECRET.getName()));
 		logWriter.flush();
 		logWriter.close();
+		
+		Output.getInstance().printLine("Auth file has been created.", Output.Type.WARNING);
 	}
 
 	@Override
